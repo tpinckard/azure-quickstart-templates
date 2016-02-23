@@ -206,7 +206,7 @@
           "fileUris": [
           "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/bitcore-centos-vm/install_bitcore.sh"
           ],
-          "commandToExecute": "[concat('echo Hello World', parameters('adminUsername'))]"
+          "commandToExecute": "[concat('echo HelloWorld', parameters('adminUsername'))]"
         }
       }
     }
