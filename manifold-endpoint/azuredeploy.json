@@ -206,7 +206,7 @@
           "fileUris": [
           "https://raw.githubusercontent.com/tpinckard/azure-quickstart-templates/master/manifold-endpoint/install_manifold.sh"
           ],
-          "commandToExecute": "[concat('sh install_bitcore.sh ', parameters('adminUsername'))]"
+          "commandToExecute": "[concat('sh install_manifold.sh ', parameters('adminUsername'))]"
         }
       }
     }
