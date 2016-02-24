@@ -45,7 +45,7 @@
     }
   },
   "variables": {
-    "nicName": "VMNic",
+    "nicName": "Manifold-endpoint-NIC",
     "addressPrefix": "10.0.0.0/16",
     "imagePublisher": "OpenLogic",
     "imageVersion": "latest",
