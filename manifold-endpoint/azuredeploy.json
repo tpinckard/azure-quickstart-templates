@@ -45,7 +45,7 @@
     }
   },
   "variables": {
-    "nicName": "Manifold-endpoint-NIC",
+    "nicName": "manifoldEndpointNIC",
     "addressPrefix": "10.0.0.0/16",
     "imagePublisher": "OpenLogic",
     "imageVersion": "latest",
@@ -54,11 +54,11 @@
     "subnetName": "Subnet-1",
     "subnetPrefix": "10.0.0.0/24",
     "storageAccountType": "Standard_LRS",
-    "publicIPAddressName": "Manifold-endpoint-pubIP",
+    "publicIPAddressName": "manifoldEndpointPubIP",
     "publicIPAddressType": "Dynamic",
     "vmStorageAccountContainerName": "vhds",
     "vmName": "[parameters('vmDnsPrefix')]",
-    "virtualNetworkName": "Manifold-endpoint-vnet",
+    "virtualNetworkName": "manifoldEndpointVnet",
     "apiVersion": "2015-06-15",
     "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]",
     "subnetRef": "[concat(variables('vnetID'),'/subnets/',variables('subnetName'))]",
