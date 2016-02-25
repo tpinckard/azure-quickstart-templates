@@ -36,12 +36,6 @@
       "metadata": {
         "description": "Size of VM"
       }
-    },
-    "sizeOfEachDataDiskInGB": {
-      "type": "string",
-      "metadata": {
-        "description": "Size of each data disk in GB"
-      }
     }
   },
   "variables": {
@@ -63,7 +57,6 @@
     "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]",
     "subnetRef": "[concat(variables('vnetID'),'/subnets/',variables('subnetName'))]",
     "storageAccountName": "[replace(replace(tolower(concat('manifold-', uniquestring(resourceGroup().id))), '-',''),'.','')]",
-    "dataDisk1VhdName": "[concat('http://',variables('storageAccountName'),'.blob.core.windows.net/',variables('vmStorageAccountContainerName'),'/',variables('vmName'),'dataDisk1.vhd')]",
     "location": "[resourceGroup().location]"
   },
   "resources": [
@@ -160,17 +153,6 @@
             "sku": "[variables('imageSKU')]",
             "version": "[variables('imageVersion')]"
           },
-          "dataDisks": [
-            {
-              "name": "datadisk1",
-              "diskSizeGB": "[parameters('sizeOfEachDataDiskInGB')]",
-              "lun": 0,
-              "vhd": {
-                "Uri": "[variables('dataDisk1VhdName')]"
-              },
-              "createOption": "Empty"
-            }
-          ],
           "osDisk": {
             "name": "osdisk1",
             "vhd": {
