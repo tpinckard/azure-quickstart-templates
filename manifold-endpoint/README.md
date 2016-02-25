@@ -3,6 +3,12 @@
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Ftpinckard%2Fazure-quickstart-templates%2Fmaster%2Fmanifold-endpoint%2Fazuredeploy.json" target="_blank"><img src="http://azuredeploy.net/deploybutton.png"/></a>
 
 This template installs the Manifold Platform REST Endpoint on a CentOS VM.
+
+
+
+
+
+
 Manifold Platform uses the Oracle JVM, and use of this image signifies your agreement with the license for thier product. 
 
 
