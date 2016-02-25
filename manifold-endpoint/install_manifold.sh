@@ -11,7 +11,7 @@ curl -X GET https://s3-us-west-2.amazonaws.com/rpmhost/rest-server-0.1-1.x86_64.
 yum install -y rest-server-0.1-1.x86_64.rpm
 
 systemctl start rest-server
-cd
-rm -rf /var/tmp/manifoldinstall
+cd /home/
+rm -rf /var/tmp/manifoldinstall/
 
 echo "Manifold installation Complete"
